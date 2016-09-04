@@ -1,0 +1,95 @@
+Recursion
+
+1. In your own words, what is Recursion?
+
+Recursion is when a function calls itself until a certain condition (normally the base case) is met. 
+
+2. Why is it necessary to have a Base Case?
+
+It's necessary for there to be a base case because there needs to be a condition that will end the loop of recursion. Otherwise, recursion could be infinite and break the computer/program.
+
+###############################################################################
+
+Graphs
+
+1. What is a Graph?
+
+A graph is similar to a tree, but the nodes are connected to one another in a cyclical relationship, like loops, instead of being one direction between two nodes. 
+
+2. How is a Graph different from a Tree?
+
+A graph is different than a tree because the nodes have looped relationships between them whereas nodes on a tree are only connected in one direction.
+
+3. Give an example of somthing that would be good to model with a Graph.
+
+Graphing Wikipedia would be a good model with a graph. 
+
+###############################################################################
+
+Performance of Different Data Structures
+
+Fill in the missing spots in the chart with the correct runtimes. Do this by reasoning through how the data structures work, NOT by looking up the solution. Add-R means add to the right/end/top and Add-L means add to the left/beginning. There are Xs in the spots where that operation doesn’t make sense for that data structure (for instance, you can’t index a Stack, or pop from the end of a Queue). We’ve provided the first few answers for you.
+
+Fill in the runtimes for the following actions for the table below:
+
+Data Structure                  Index   Search  Add-R   Add-L   Pop-L   Pop-R
+Python List (Array)             O(1)    O(n)    O(1)    O(n)    O(n)    O(1)  
+Linked List                     O(n)    O(n)    O(1)    O(1)    O(1)    O(n)   
+Doubly-Linked List              O(n)    O(n)    O(1)    O(1)    O(1)    O(1)   
+Queue (as Array)                X       X       O(1)    X       O(n)    X
+Queue (as LL or DLL)            X       X       O(1)    X       O(1)    X
+Stack (as Array, LL, or DLL)    X       X       O(1)    X       X       O(1)
+Deque (as DLL)                  X       X       O(1)    O(1)    O(1)    O(1)
+
+Index: Find an item in the structure when you know its position
+Search: Find an item in the structure when you know its data
+Add(R/L): Set a key in set/dictionary or add node to tree
+Pop(R/L): Remove a key or node
+Fill in Runtime and Memory:
+
+The answers for Dictionary have been provided; you should fill in the rest:
+
+Data Structure          Get     Add     Delete  Iterate Memory
+Dictionary (Hash Map)   O(1)    O(1)    O(1)    O(n)    medium
+Set (Hash Map)          O(1)    O(1)    O(1)    O(n)    medium    
+Binary Search Tree      O(logn) O(n)    O(n)    O(1)    a little           
+Tree                    O(n)    O(1)    O(1)    O(1)    a little
+
+
+Get: Find an item in the structure
+Add: Set a key in set/dictionary or add node to tree
+Delete: Remove a key or node
+Iterate: Find next item in data structure
+Memory: Relative to data, how much memory is used? (Choices: a little, medium, or a lot)
+
+###############################################################################
+
+Sorting
+
+1. Describe in words how the Bubble Sort algorithm works.
+
+Bubble sort bubbles the largest number to the far right. The algorithm compares two numbers at a time and places the bigger one on the right and the smaller on the left and continues to evaluate the nubmers until they are in order.
+
+2. Describe in words how the Merge Sort algorithm works.
+
+Merge Sort uses a divide and conquer strategy and breaks a list in half. These lists will continue to be broken down into smallers lists until there are only lists that contain one item. Then the algorithm compares the numbers in these smaller lists and creates a new sorted list. The lists will be continue to be compared and merged until there's a new sorted list containing all of the original numbers.
+
+3. Describe in words how the Quick Sort algorithm works.
+
+Quick Sort chooses a number in the list as the "pivot." The numbers that are smaller than the pivot go on the right side and the numbers that are larger than the pivot go on the left side. This process continues until the entire list is sorted.
+
+###############################################################################
+
+Git Branching
+
+1. Give an instance when you would use git branching.
+
+If you're working on a project with a team and you want to try a new feature, you can use git branching to try your code without breaking the rest of the project. If this feature works, you can merge it with the rest of the project.
+
+2. What is a pull request?
+
+A pull request is asking to merge your branch into another branch. The project owner will check and review the branch before they approve the merge.
+
+
+
+###############################################################################
