@@ -12,6 +12,9 @@ def bubble_sort(lst):
         for j in range(len(lst) - 1 - i):
             if lst[j] > lst[j+1]:
                 lst[j], lst[j+1] = lst[j+1], lst[j]
+                #temp_num = lst[j]
+                #lst[j] = lst[j+1]
+                #lst[j+1] = temp_num
                 swapped = True
         if not swapped:
             break
